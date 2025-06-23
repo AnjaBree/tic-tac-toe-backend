@@ -20,7 +20,6 @@ mongoose
   .catch(err => console.error('DB connection error', err));
 
 io.on('connection', socket => {
-  // Join or create a room
   socket.on('join', async (roomId: string) => {
     let room = await GameRoom.findById(roomId);
     if (!room) {
