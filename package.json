@@ -1,10 +1,10 @@
 {
   "name": "tic-tac-toe-server",
   "version": "1.0.0",
-  "main": "dist/server.js",
+  "main": "dist/app.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node dist/app.js",
     "dev": "nodemon --config nodemon.json src/app.ts"
   },
   "dependencies": {
